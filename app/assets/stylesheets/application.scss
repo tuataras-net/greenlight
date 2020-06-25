@@ -15,6 +15,7 @@
 * with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
 */
 
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -38,7 +39,6 @@
 @import "font-awesome";
 @import "monolith.min.scss";
 @import "bootstrap-select.min";
-
 @import "utilities/variables";
 @import "admins";
 @import "main";
@@ -46,99 +46,103 @@
 @import "sessions";
 @import "utilities/fonts";
 @import "users";
-
 * {
-  outline: none !important;
+    outline: none !important;
 }
 
-html, body {
-  font-family: "Source Sans Pro" !important;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background-color: white;
+html,
+body {
+    font-family: "Source Sans Pro" !important;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: white;
 }
 
 a {
-  text-decoration: none !important;
-  cursor: pointer;
+    text-decoration: none !important;
+    cursor: pointer;
 }
 
 .dotted_underline {
-  border-bottom: 3px dashed #d3d3d3;
-  width: 100%;
+    border-bottom: 3px dashed #d3d3d3;
+    width: 100%;
 }
 
 .disable-click {
-  pointer-events: none;
+    pointer-events: none;
 }
 
 .header {
-  height: $header-height;
+    height: $header-height;
 }
 
 .wrapper {
-  position: relative;
-  height: auto;
-  min-height: calc(100% - #{$header-height} - #{$footer-height});
+    position: relative;
+    height: auto;
+    min-height: calc(100% - #{$header-height} - #{$footer-height});
 }
 
 .footer {
-  height: $footer-height;
-  width: 100%;
+    height: $footer-height;
+    width: 100%;
+}
+
+.background-home {
+    background-color: $background-color-home;
 }
 
 .background {
-  background-color: $background-color;
+    background-color: $background-color;
 }
 
 .error-section {
-  background-color: $error-background-color;
+    background-color: $error-background-color;
 }
 
 .font-weight-400 {
-  font-weight: 400;
+    font-weight: 400;
 }
 
 .subtitle {
-  font-size: 25px;
+    font-size: 25px;
 }
 
 .force-bottom {
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
 }
 
 .invite-link-input {
-  width: 100%;
+    width: 100%;
 }
 
 .no-border-top {
-  td {
-    border-top: none;
-  }
+    td {
+        border-top: none;
+    }
 }
 
 .force-text-normal {
-  color: #495057;
+    color: #495057;
 }
 
 .terms {
-  overflow: scroll;
-  height: 55vh;
+    overflow: scroll;
+    height: 55vh;
 }
 
 [contenteditable]:focus {
-  outline: 0px solid transparent;
+    outline: 0px solid transparent;
 }
 
 .cookies-banner {
-  color: white;
-  background-color: $button-color-blue;
-  #cookies-agree-button {
-    margin: 0;
-  }
+    color: white;
+    background-color: $button-color-blue;
+    #cookies-agree-button {
+        margin: 0;
+    }
 }
 
 input:focus {
@@ -146,36 +150,34 @@ input:focus {
 }
 
 .list-group-item-action.active {
-  color: $primary;
+    color: $primary;
 }
 
 .header .header-nav {
-  color: $text-muted !important;
-
-  &:hover {
-    padding-bottom: 21px;
-    border-bottom: 1px solid $primary;
-  }
-
-  &.active {
-    color: $primary !important;
-    padding-bottom: 21px;
-    border-bottom: 1px solid $primary;
-  }
+    color: $text-muted !important;
+    &:hover {
+        padding-bottom: 21px;
+        border-bottom: 1px solid $primary;
+    }
+    &.active {
+        color: $primary !important;
+        padding-bottom: 21px;
+        border-bottom: 1px solid $primary;
+    }
 }
 
 table {
-  thead {
-    th[data-order]:hover {
-      cursor: pointer;
+    thead {
+        th[data-order]:hover {
+            cursor: pointer;
+        }
     }
-  }
 }
 
-.cursor-pointer{
-  cursor: pointer;
+.cursor-pointer {
+    cursor: pointer;
 }
 
 #delete-confirm:disabled {
-  cursor: not-allowed;
+    cursor: not-allowed;
 }
